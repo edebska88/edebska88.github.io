@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <h1>Zapis uczestnika na szkolenie:</h1>
+    <form action="https://formspree.io/f/xpzbarbw" method="post">
+        <label>Imię:<br><input type="text" name="name"></label><br><br>
+        <label>Nazwisko:<br><input type="text" name="surname"></label><br><br>
+        <label>Mail:<br><input type="email" name="email"></label><br><br>
+        <label>Telefon:<br><input type="tel" name="phone" placeholder="123-456-789"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></label><br><br>
+
+        <label>Miejsce szkolenia:<br>
+            <select name="city">
+                <option value="Kraków">Kraków</option>
+                <option value="Warszawa">Warszawa</option>
+                <option value="Gdańsk">Gdańsk</option>
+            </select>
+        </label><br><br>
+
+        <p>Płeć:</p>
+        <label><input type="radio" name="choise">Kobieta</label><br>
+        <label><input type="radio" name="choise">Mężczyzna</label><br><br>
+
+        <label><input type="checkbox" name="agreement">Wyrażam zgodę na przetwarzanie danych
+            osobowych</label><br><br>
+
+        <label>Wiadomość:<br><textarea name="message" cols="30" rows="10"></textarea></label><br>
+
+        <input type="submit" value="Wyślij formularz">
+    </form>
+</body>
+
+</html>
